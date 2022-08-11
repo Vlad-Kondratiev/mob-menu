@@ -1,0 +1,133 @@
+.galery__list {
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width:1200px) {
+    justify-content:center;
+    margin: -15px; 
+  }  
+}
+
+
+.galery__pre-title {
+  @include font(400, 16px, 1.9, 0.03em);
+  color: var(--primary-text-color);
+}
+
+.galery__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+}
+
+.galery__item .galery__title {
+  margin-bottom: 4px;
+  @include font(700, 18px, 2, 0.06em);
+  color: #212121;
+}
+
+
+
+.galery__item {
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    position: relative;
+  }
+    
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    margin: 15px;
+    flex-basis: calc((100% - 90px) / 3);
+    position: relative;
+  }  
+}
+
+.galery__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.galery__item:nth-last-child(-n + 3) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.galery__item:nth-child(even) {
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    margin-left: 30px;
+  }
+}
+
+.galery__wrap {
+  // width: 450px;
+  position: relative;
+  overflow: auto;
+}
+
+.galery__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px;
+
+  @include font(400, 18px, 1.56, 0.03em);
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.56;
+  // letter-spacing: 0.03em;
+  height: 100vh;
+
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .galery__link:hover &,
+  .galery__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.galery__link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.galery__content {
+  width: 100%;
+  height: 146px;
+}
+
+.galery__img {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}

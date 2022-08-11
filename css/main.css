@@ -1134,7 +1134,9 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   outline: 1px solid #2196F3;
   transform: translateX(100%);

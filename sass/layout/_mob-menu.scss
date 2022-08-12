@@ -17,6 +17,10 @@
     align-items: center;
 }
 
+.mobile-nav__link:hover {
+    color:#2196F3;
+}
+
 .menu-btn {
     position: relative;
     display: flex;
@@ -30,22 +34,36 @@
     border: none;
     cursor: pointer;
     z-index: 10;
+
+    
 }
 
 .menu-btn__icon-open {
     opacity: 1;
+    transform: scale(1) rotate(0) translateY(0);
+    transform-origin: center;
+    transition: opasity 400ms ease, transform 400ms ease;
+}
+
+.menu-btn__icon:hover {
+    fill: #2196F3;
 }
 
 .menu-btn.is-active .menu-btn__icon-open {
     opacity: 0;
+    transform: scale(0,3) rotate(90deg) translateY(100%);
 }
 
 .menu-btn__icon-close {
     opacity: 0;
+    transform: scale(0,3) rotate(0);
+    transform-origin: center;
+    transition: opasity 400ms ease, transform 400ms ease;
 }
 
 .menu-btn.is-active .menu-btn__icon-close {
     opacity: 1;
+    transform: scale(1) rotate(2turn);
 }
 
 .mobile-menu {

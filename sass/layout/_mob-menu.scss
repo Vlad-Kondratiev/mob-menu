@@ -44,7 +44,7 @@
     opacity: 1;
     transform: scale(1) rotate(0) translateY(0);
     transform-origin: center;
-    transition: opasity 400ms ease, transform 400ms ease;
+    transition: opasity 400ms ease, transform 400ms ease, fill var(--anim-fast);
 }
 
 .menu-btn__icon:hover {
@@ -60,7 +60,7 @@
     opacity: 0;
     transform: scale(0,3) rotate(0);
     transform-origin: center;
-    transition: opasity 400ms ease, transform 400ms ease;
+    transition: opasity 400ms ease, transform 400ms ease, fill var(--anim-fast);
 }
 
 .menu-btn.is-active .menu-btn__icon-close {
@@ -108,6 +108,8 @@
     letter-spacing: 0.02em;
 
     color: #212121; 
+
+    transition: color var(--anim-fast);
 }
 
 .mobil-nav__item:not(:last-child) {
@@ -148,6 +150,8 @@
 
     color: #757575;
 
+    transition: color var(--anim-fast);
+
     &:hover {
         color: #2196F3;
     }
@@ -185,6 +189,8 @@
     letter-spacing: 0.02em;
 
     color: #2196F3;
+
+    transition: color var(--anim-fast);
 
     &:hover {
         color: #757575;

@@ -123,7 +123,6 @@ button {
   display: flex;
   align-items: center;
 }
-
 .mobile-nav__link:hover {
   color: #2196F3;
 }
@@ -251,6 +250,9 @@ button {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.mobile-contacts__link-mail:hover {
+  color: #2196F3;
+}
 
 .mobile-contacts__list {
   margin-bottom: 64px;
@@ -271,10 +273,6 @@ button {
   margin-top: 10px;
 }
 
-.mobile-socials__link:hover {
-  color: #757575;
-}
-
 .mobile-socials__link {
   display: block;
   padding-right: 10px;
@@ -286,6 +284,9 @@ button {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+.mobile-socials__link:hover {
+  color: #757575;
 }
 
 .mobile-socials__item:last-child .mobile-socials__link {

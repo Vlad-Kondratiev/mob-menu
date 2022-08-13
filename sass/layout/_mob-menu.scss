@@ -15,10 +15,10 @@
 .mobile-nav {
     display: flex;
     align-items: center;
-}
 
-.mobile-nav__link:hover {
-    color:#2196F3;
+    &__link:hover {
+        color:#2196F3;
+    }
 }
 
 .menu-btn {
@@ -147,6 +147,10 @@
     letter-spacing: 0.02em;
 
     color: #757575;
+
+    &:hover {
+        color: #2196F3;
+    }
 }
 
 .mobile-contacts__list {
@@ -168,10 +172,6 @@
     margin-top: 10px;
 }
 
-.mobile-socials__link:hover {
-    color: #757575;
-}
-
 .mobile-socials__link {
     display: block;
     padding-right: 10px;
@@ -185,6 +185,10 @@
     letter-spacing: 0.02em;
 
     color: #2196F3;
+
+    &:hover {
+        color: #757575;
+    }
 }
 
 .mobile-socials__item:last-child .mobile-socials__link {

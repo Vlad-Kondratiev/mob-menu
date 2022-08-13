@@ -141,6 +141,11 @@ button {
   cursor: pointer;
   z-index: 10;
 }
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
+}
 
 .menu-btn__icon-open {
   opacity: 1;
@@ -182,6 +187,11 @@ button {
   flex-direction: column;
   opacity: 0;
   transform: translateX(100%);
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {

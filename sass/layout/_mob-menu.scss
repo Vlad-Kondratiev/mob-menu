@@ -33,9 +33,11 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 10; 
 
-    
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .menu-btn__icon-open {
@@ -79,6 +81,10 @@
 
     opacity: 0;
     transform: translateX(100%);
+
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .mobile-menu.is-open {
